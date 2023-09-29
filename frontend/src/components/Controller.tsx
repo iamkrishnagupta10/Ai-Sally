@@ -2,7 +2,7 @@ import { useState } from "react";
 import Title from "./Title";
 import axios from "axios";
 import RecordMessage from "./RecordMessage";
-const backendServiceUrl = "https://backend-service-dot-ai-sally.uc.r.appspot.com"
+
 const Controller = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<any[]>([]);
@@ -30,7 +30,7 @@ const Controller = () => {
 
         // send form data to api endpoint
         await axios
-          .post(`${backendServiceUrl}/post-audio`, formData, {
+          .post("https://backend-service-dot-ai-sally.uc.r.appspot.com/post-audio", formData, {
             headers: {
               "Content-Type": "audio/mpeg",
             },
