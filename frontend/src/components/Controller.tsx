@@ -2,7 +2,7 @@ import { useState } from "react";
 import Title from "./Title";
 import axios from "axios";
 import RecordMessage from "./RecordMessage";
-
+const backendServiceUrl = "https://backend-service-dot-ai-sally.uc.r.appspot.com"
 const Controller = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [messages, setMessages] = useState<any[]>([]);
