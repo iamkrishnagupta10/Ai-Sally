@@ -1,138 +1,83 @@
-# Instructions
+# 🌈 Ai-Sally: Your Pocket Therapist 🌈
 
-## Download
 
-Download the package from GitHub
+## 🌟 Introduction 🌟
 
-```shell
-git clone https://github.com/coderaidershaun/chatbot-conversation-jarvis.git chatbot
+**Ai-Sally** is a groundbreaking application designed to bring world-class therapeutic assistance right to your pocket. Powered by advanced machine learning algorithms, Sally specializes in child psychology and offers a range of therapeutic techniques. 🧠🌱
+
+## 📚 Table of Contents 📚
+
+- [Introduction](#-introduction-)
+- [Features](#-features-)
+- [Installation](#-installation-)
+- [Usage](#-usage-)
+- [Contribution](#-contribution-)
+- [License](#-license-)
+- [Contact](#-contact-)
+
+## 🎉 Features 🎉
+
+- **Voice Chat**: Real-time voice chat functionality. 🎙️
+- **Adaptive Personality**: Sally adapts her tone and technique based on the child's emotional state. 🌈
+- **Therapeutic Techniques**: Includes CBT for kids, Mindfulness, Breathing techniques, and more. 🌱
+- **Child-Friendly**: Uses simple, child-friendly language. 🧒
+- **Secure and Private**: Fully encrypted and HIPAA compliant. 🔒
+
+## 🛠️ Installation 🛠️
+
+Clone the repository and navigate into the directory:
+
+```bash
+git clone https://github.com/yourusername/Ai-Sally.git
+cd Ai-Sally
 ```
 
-## Setup backend
+### Backend
 
-Change directory into backend
+Navigate to the backend directory and install the dependencies:
 
-```shell
-cd chatbot/backend
+```bash
+cd backend
+pip install -r requirements.txt
 ```
 
-### Setup virtual environment
+### Frontend
 
-Create a Virtual Environment
+Navigate to the frontend directory and install the dependencies:
 
-```shell
-python3 -m venv venv
+```bash
+cd frontend
+yarn install
 ```
 
-Activate Virtual Environment (MAC)
+## 🚀 Usage 🚀
 
-```shell
-source venv/bin/activate
-```
+### Backend
 
-Activate Virtual Environment (Windows)
+To start the backend server:
 
-```shell
-source venv/Scripts/activate
-```
-
-Upgrade PIP
-
-```shell
-pip3 install --upgrade pip
-```
-
-### Install Python packages
-
-Install required Python packages
-
-```shell
-pip3 install openai python-decouple fastapi "uvicorn[standard]" python-multipart
-```
-
-Or use this alternative method (although this alternative method might not work if using Windows)
-
-```shell
-pip3 install -r requirements.txt
-```
-
-### Create Environment Variables
-
-Create your .env file
-
-```shell
-touch .env
-```
-
-Update your .env file with the following. You can see your .env by typing sudo nano .env or just by clicking on the file if you are in VS Code.
-
-```plain
-OPEN_AI_ORG=enter-you-key-here
-OPEN_AI_KEY=enter-you-key-here
-ELEVEN_LABS_API_KEY=enter-you-key-here
-```
-
-### Start your backend server
-
-Start your backend server
-
-```shell
+```bash
 uvicorn main:app
 ```
 
-Alternatively, you can ensure your server resets every time you make a change by typing:
+### Frontend
 
-```shell
-uvicorn main:app -- reload
-```
+To start the frontend server:
 
-You can check your server is working by going to:
-
-```plain
-http://localhost:8000/health
-```
-
-## Setup frontend
-
-Change directory into frontend
-
-```shell
-cd ..
-cd chatbot/frontend
-```
-
-Install packages
-
-```shell
-yarn --exact
-```
-
-Build application
-
-```shell
-yarn build
-```
-
-Start server in dev mode
-
-```shell
-yarn dev
-```
-
-You can check your dev server is working by going to:
-
-```plain
-http://localhost:5173/health
-```
-
-or alternatively in live mode:
-
-```shell
+```bash
 yarn start
 ```
 
-You can check your live server is working by going to:
+## 🤝 Contribution 🤝
 
-```plain
-http://localhost:4173/health
-```
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📜 License 📜
+
+Distributed under the MIT License.
