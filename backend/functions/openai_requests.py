@@ -24,13 +24,13 @@ def convert_audio_to_text(audio_file):
 def get_chat_response(message_input):
 
   messages = get_recent_messages()
-  user_message = {"role": "user", "content": message_input + " Only say two or 3 words in Spanish if speaking in Spanish. The remaining words should be in English"}
+  user_message = {"role": "user", "content": message_input + " You are a world-class therapist named Sally. You specialize in helping kids with mental problems, disabilities, or difficult times. Be calming and soothing. Use simple language that kids will understand."}
   messages.append(user_message)
   print(messages)
 
   try:
     response = openai.ChatCompletion.create(
-      model="gpt-3.5-turbo",
+      model="gpt-4",
       messages=messages
     )
     message_text = response["choices"][0]["message"]["content"]
