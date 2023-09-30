@@ -29,8 +29,7 @@ const Controller = () => {
         formData.append("file", blob, "myFile.wav");
 
         // send form data to api endpoint
-        await axios
-          .post("https://backend-service-dot-ai-sally.uc.r.appspot.com/post-audio", formData, {
+        await axios.post("https://backend-service-dot-ai-sally.uc.r.appspot.com/post-audio", formData, {
             headers: {
               "Content-Type": "audio/mpeg",
             },
